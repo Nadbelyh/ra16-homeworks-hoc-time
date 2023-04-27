@@ -4,7 +4,7 @@ import DateTimePretty from "./dateTimePrettyComponent ";
 function Video(props) {
   const DateTimePrettyComponent = DateTimePretty(DateTime);
   return (
-    <div className="video">
+    <div className="item item-video">
       <iframe
         src={props.url}
         title={props.url}
