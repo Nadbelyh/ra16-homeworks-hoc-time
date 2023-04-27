@@ -12,7 +12,17 @@ function Video(props) {
         allow="autoplay; encrypted-media"
         allowFullScreen
       ></iframe>
-      <DateTimePrettyComponent date={props.date} />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <p className="views">Просмотров: {props.views}</p>
+        <DateTimePrettyComponent date={props.date} />
+      </div>
     </div>
   );
 }
